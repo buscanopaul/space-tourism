@@ -9,7 +9,17 @@ module.exports = {
     './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        barlow: ['Barlow Condensed', 'sans-serif'],
+        barlowNormal: ['Barlow', 'sans-serif'],
+        bellefair: ['Bellefair', 'serif'],
+      },
+      colors: {
+        primary: '#0B0D17',
+        secondary: '#D0D6F9',
+      },
+    },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-animate')],
 };
