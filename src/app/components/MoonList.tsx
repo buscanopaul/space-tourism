@@ -14,9 +14,7 @@ function MoonList() {
 
   return (
     <div className="mt-14 flex flex-col items-center justify-center lg:flex-row">
-      <div
-        className={`mb-10 w-1/2  ${handleDestination && 'animate-in fade-in'}`}
-      >
+      <div className={`mb-10 w-1/2`}>
         <Image
           className=""
           src={require(`../../../public${activeTab.images.png}`)}
@@ -27,8 +25,8 @@ function MoonList() {
       </div>
       <div className="relative h-[450px] lg:w-1/3">
         <ul className="mb-10 flex justify-center gap-8 lg:justify-start">
-          {data.destinations.map((destination) => (
-            <li>
+          {data.destinations.map((destination, index) => (
+            <li key={index}>
               <DestinationItem
                 active={activeTab.name}
                 title={destination.name}

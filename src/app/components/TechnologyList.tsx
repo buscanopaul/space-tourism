@@ -1,9 +1,14 @@
 'use client';
 
-import { useCallback, useState } from 'react';
+import { CSSProperties, useCallback, useState } from 'react';
 import data from '../../../data.json';
 import { Technology } from '../typings';
 import TechnologyBulletItem from './TechnologyBulletItem';
+
+interface CustomStyles extends CSSProperties {
+  '--image-url-desktop'?: string;
+  '--image-url-mobile'?: string;
+}
 
 function TechnologyList() {
   const [activeTech, setActiveTech] = useState(data.technology[0]);
@@ -15,10 +20,12 @@ function TechnologyList() {
   return (
     <div className="flex-row-reverse lg:flex">
       <div
-        style={{
-          '--image-url-desktop': `url(${activeTech.images.portrait})`,
-          '--image-url-mobile': `url(${activeTech.images.landscape})`,
-        }}
+        style={
+          {
+            '--image-url-desktop': `url(${activeTech.images.portrait})`,
+            '--image-url-mobile': `url(${activeTech.images.landscape})`,
+          } as CustomStyles
+        }
         className={`right-100 my-10 h-[170px] animate-bounce bg-black bg-[image:var(--image-url-mobile)] bg-center bg-no-repeat duration-150 repeat-0 md:h-[310px] md:bg-cover lg:h-[527px] lg:w-[40%] lg:bg-[image:var(--image-url-desktop)] `}
       />
       <div className="mx-auto flex flex-col items-center justify-start md:max-w-screen-sm lg:w-[60%] lg:max-w-full lg:flex-row lg:px-6 ">

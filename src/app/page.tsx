@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <div
-      className={`relative h-full w-full bg-[url('/home/background-home-desktop.jpg')] bg-cover bg-center bg-no-repeat pt-32 md:pt-40 lg:h-screen`}
+      className={`relative h-full w-full bg-[url("/home/background-home-desktop.jpg")] bg-cover bg-center bg-no-repeat pt-32 md:pt-40 lg:h-screen`}
     >
       <div className="mx-auto flex h-full max-w-screen-xl flex-col items-center justify-center px-6 text-center lg:flex-row lg:items-end lg:justify-between lg:pb-32 lg:text-left">
         <div className="mb-32 lg:mb-0">
@@ -14,10 +14,10 @@ export default function Home() {
             SPACE
           </h1>
           <p className="mg:text-base max-w-lg text-[15px] leading-loose text-secondary lg:text-lg">
-            Let's face it. If you want to go to space, you might as well
+            Let&apos;s face it. If you want to go to space, you might as well
             genuinely go to outer space and not hover kind of on the edge on it.
-            Well sit back,and relax because we'll give you a truly out of this
-            world experience!
+            Well sit back,and relax because we&apos;ll give you a truly out of
+            this world experience!
           </p>
         </div>
         <Link

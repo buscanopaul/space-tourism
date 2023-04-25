@@ -9,12 +9,9 @@ import CrewBulletItem from './CrewBulletItem';
 function CrewList() {
   const [activeCrew, setActiveCrew] = useState(data.crew[0]);
 
-  const handleCurrentCrew = useCallback(
-    (crew: any) => {
-      setActiveCrew(crew);
-    },
-    [activeCrew]
-  );
+  const handleCurrentCrew = useCallback((crew: any) => {
+    setActiveCrew(crew);
+  }, []);
 
   return (
     <div className="relative flex w-full flex-col-reverse items-center justify-start text-center md:flex-col lg:flex-row lg:text-left">
@@ -32,8 +29,8 @@ function CrewList() {
         </div>
         <div className="py-7 lg:mt-20">
           <ul className="flex items-center justify-center gap-5 lg:justify-start">
-            {data.crew.map((crew) => (
-              <li>
+            {data.crew.map((crew, index) => (
+              <li key={index}>
                 <CrewBulletItem
                   onClick={() => handleCurrentCrew(crew)}
                   active={activeCrew.name}
