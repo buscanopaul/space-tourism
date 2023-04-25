@@ -22,7 +22,7 @@ export default function Home() {
         </div>
         <Link
           href={`/destination`}
-          className="mb-20 flex h-40 w-40 items-center justify-center rounded-full bg-white text-center md:h-60 md:w-60 lg:mb-0 lg:h-64 lg:w-64"
+          className="no-repeat mb-20 flex h-40 w-40 items-center justify-center rounded-full  bg-white text-center ring-gray-700/90 animate-in fade-in zoom-in duration-300 hover:ring-[50px] md:h-60 md:w-60 lg:mb-0 lg:h-64 lg:w-64"
         >
           <span className="font-bellefair text-xl text-primary md:text-2xl">
             EXPLORE

@@ -14,7 +14,7 @@ function MobileMenuItem({ number, title, onClick, path }: Props) {
         title.toLocaleLowerCase() === 'home' ? '' : title.toLowerCase()
       }`}
       onClick={onClick}
-      className={`relative flex items-center justify-between border-r-8 border-r-transparent font-barlow uppercase tracking-[.25em] ${
+      className={`relative flex items-center justify-between border-r-8 border-r-transparent font-barlow uppercase tracking-[.25em] transition-all duration-100 ease-in-out hover:border-r-secondary ${
         path === title.toLowerCase() && '!border-r-white'
       } py-4`}
     >

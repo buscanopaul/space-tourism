@@ -12,7 +12,7 @@ function DestinationItem({ title, onClick, active }: DestinationItemProps) {
       onClick={onClick}
       className={`${
         title.toLowerCase() === active.toLowerCase() && '!border-b-white'
-      } border-b-4 border-b-transparent pb-3`}
+      } border-b-4 border-b-transparent pb-3 transition-all duration-100 ease-in-out hover:border-b-secondary`}
     >
       <span
         className={`font-barlow text-sm uppercase tracking-[.25em] md:text-base ${

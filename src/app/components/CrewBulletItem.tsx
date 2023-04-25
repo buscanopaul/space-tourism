@@ -9,8 +9,9 @@ type CrewBulletItemProps = {
 
 function CrewBulletItem({ crew, onClick, active }: CrewBulletItemProps) {
   return (
-    <button onClick={onClick}>
+    <button onClick={onClick} className="group">
       <BsFillCircleFill
+        className="transition duration-100 ease-in-out group-hover:fill-gray-300"
         size="0.6em"
         color={`${active === crew.name ? 'white' : 'gray'}`}
       />
