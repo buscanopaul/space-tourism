@@ -43,8 +43,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/buscanopaul/space-tourism)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/buscanopaul/space-tourism](https://github.com/buscanopaul/space-tourism)
+- Live Site URL: [https://space-tourism-zeta-ten.vercel.app](https://space-tourism-zeta-ten.vercel.app)
 
 ## My process
 

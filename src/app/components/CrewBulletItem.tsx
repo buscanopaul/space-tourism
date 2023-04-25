@@ -12,7 +12,7 @@ function CrewBulletItem({ crew, onClick, active }: CrewBulletItemProps) {
     <button onClick={onClick}>
       <BsFillCircleFill
         size="0.6em"
-        color={`${active === crew.name ? 'white' : 'text-secondary'}`}
+        color={`${active === crew.name ? 'white' : 'gray'}`}
       />
     </button>
   );
