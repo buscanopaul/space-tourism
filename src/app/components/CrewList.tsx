@@ -17,13 +17,13 @@ function CrewList() {
     <div className="relative flex w-full flex-col-reverse items-center justify-start text-center md:flex-col lg:flex-row lg:text-left">
       <div className="flex w-full flex-col-reverse justify-between md:flex-col lg:w-1/2">
         <div className="mt-0 text-white md:mt-20 lg:mt-0">
-          <p className="mb-1 font-bellefair text-base uppercase text-white opacity-40 md:text-2xl lg:text-3xl">
+          <p className="mb-1 font-bellefair text-base uppercase text-white opacity-40 animate-in slide-in-from-left-10 duration-500 md:text-2xl lg:text-3xl">
             {activeCrew.role}
           </p>
-          <p className="mb-4 font-bellefair text-2xl uppercase text-white md:text-4xl lg:text-5xl">
+          <p className="mb-4 font-bellefair text-2xl uppercase text-white animate-in slide-in-from-left-10 duration-500 md:text-4xl lg:text-5xl">
             {activeCrew.name}
           </p>
-          <p className="font-barlowNormal text-[15px] text-secondary md:text-base lg:text-lg">
+          <p className="font-barlowNormal text-[15px] text-secondary animate-in slide-in-from-left-10 duration-500 md:text-base lg:text-lg">
             {activeCrew.bio}
           </p>
         </div>
@@ -42,7 +42,7 @@ function CrewList() {
         </div>
       </div>
       <Image
-        className="mt-10 border-b border-b-[#383B4B] px-28  md:border-b-0 md:px-12 lg:w-2/5"
+        className="mt-10 border-b border-b-[#383B4B] px-28  animate-in slide-in-from-right-20 duration-500 md:border-b-0 md:px-12 lg:w-2/5"
         src={require(`../../../public${activeCrew.images.png}`)}
         width={400}
         height={400}

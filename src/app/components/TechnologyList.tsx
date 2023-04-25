@@ -29,7 +29,7 @@ function TechnologyList() {
         className={`right-100 my-10 h-[170px] animate-bounce bg-black bg-[image:var(--image-url-mobile)] bg-center bg-no-repeat duration-150 repeat-0 md:h-[310px] md:bg-cover lg:h-[527px] lg:w-[40%] lg:bg-[image:var(--image-url-desktop)] `}
       />
       <div className="mx-auto flex flex-col items-center justify-start md:max-w-screen-sm lg:w-[60%] lg:max-w-full lg:flex-row lg:px-6 ">
-        <ul className="mb-7 flex gap-5 lg:flex-col">
+        <ul className="mb-7 flex gap-5 animate-in slide-in-from-top-1 duration-500 lg:flex-col">
           {data.technology.map((tech, index) => (
             <li key={index}>
               <TechnologyBulletItem
@@ -42,13 +42,13 @@ function TechnologyList() {
           ))}
         </ul>
         <div className="mx-10 flex flex-col items-center px-6 md:pb-10 lg:items-start">
-          <p className="mb-3 font-barlow text-sm uppercase tracking-[.25em] text-secondary md:text-base">
+          <p className="mb-3 font-barlow text-sm uppercase tracking-[.25em] text-secondary animate-in slide-in-from-top-1 duration-700 md:text-base">
             the terminology ...
           </p>
-          <p className="mb-5 font-bellefair text-3xl uppercase text-white md:text-4xl lg:text-5xl">
+          <p className="mb-5 font-bellefair text-3xl uppercase text-white animate-in slide-in-from-top-1 duration-700 md:text-4xl lg:text-5xl">
             {activeTech.name}
           </p>
-          <p className="text-center font-barlowNormal text-[15px] leading-relaxed text-secondary md:text-base lg:text-left lg:text-lg">
+          <p className="text-center font-barlowNormal text-[15px] leading-relaxed text-secondary animate-in slide-in-from-top-1 duration-700 md:text-base lg:text-left lg:text-lg">
             {activeTech.description}
           </p>
         </div>

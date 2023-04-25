@@ -14,7 +14,7 @@ function MoonList() {
 
   return (
     <div className="mt-14 flex flex-col items-center justify-center lg:flex-row">
-      <div className={`mb-10 w-1/2`}>
+      <div className={`mb-10 w-1/2 animate-in spin-in-6 duration-500`}>
         <Image
           className=""
           src={require(`../../../public${activeTab.images.png}`)}
@@ -35,10 +35,10 @@ function MoonList() {
             </li>
           ))}
         </ul>
-        <h1 className="mb-8 text-center font-bellefair text-5xl uppercase tracking-wide text-white md:text-7xl lg:text-left lg:text-8xl">
+        <h1 className="mb-8 text-center font-bellefair text-5xl uppercase tracking-wide text-white animate-in slide-in-from-right-10 duration-500 md:text-7xl lg:text-left lg:text-8xl">
           {activeTab.name}
         </h1>
-        <p className="mb-12 text-center text-base text-secondary lg:text-left lg:text-lg">
+        <p className="mb-12 text-center text-base text-secondary animate-in slide-in-from-right-10 duration-500 lg:text-left lg:text-lg">
           {activeTab.description}
         </p>
         <div className="mb-7 w-full border-b border-b-[#383B4B]" />
@@ -51,7 +51,7 @@ function MoonList() {
               {activeTab.distance}
             </h3>
           </div>
-          <div>
+          <div className="animate-in slide-in-from-right-10 duration-700">
             <p className="text-md mb-2 text-center font-barlow uppercase tracking-[.25em] text-secondary md:text-sm">
               EST. TRAVEL TIME
             </p>

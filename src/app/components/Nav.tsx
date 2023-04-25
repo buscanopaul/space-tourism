@@ -31,7 +31,7 @@ function Nav() {
   }, []);
 
   return (
-    <div className="flex items-center justify-between absolute lg:top-10 md:top-0 top-5 z-10 w-full">
+    <div className="absolute top-5 z-10 flex w-full items-center justify-between animate-in slide-in-from-top duration-500 md:top-0 lg:top-10">
       <Link href={`/`}>
         <Image
           className="ml-5"
@@ -41,11 +41,11 @@ function Nav() {
           alt="Space Tourism"
         />
       </Link>
-      <div className="border-b border-b-white opacity-30  w-1/3 hidden lg:block absolute left-40 z-10" />
+      <div className="absolute left-40 z-10  hidden w-1/3 border-b border-b-white opacity-30 lg:block" />
       <DesktopMenu />
       <button
         onClick={handleMobileMenu}
-        className="md:hidden mr-5 absolute right-0"
+        className="absolute right-0 mr-5 md:hidden"
       >
         <Image
           src={require('../../../public/logos/icon-hamburger.svg')}
